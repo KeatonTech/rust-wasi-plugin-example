@@ -1,0 +1,11 @@
+[package]
+name = "plugin-host"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1.68"
+getch = "0.3.1"
+tokio = {version = "^1.28.2", features = ["full"] }
+wasmtime = { version = "^10.0.1", features = ["component-model"] }
+wasmtime-wasi = "10.0.1"

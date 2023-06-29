@@ -1,0 +1,15 @@
+package simple-component:plugin
+
+interface logger {
+    log-info: func(message: string)
+    log-error: func(message: string)
+}
+
+interface autocompleter {
+    generate-completions: func(input: string) -> list<string>
+}
+
+world plugin {
+    import logger
+    export autocompleter
+}
